@@ -9,10 +9,5 @@
     "require": {
         "slim/slim": "^3.11",
         "twig/twig": "^2.5"
-    },
-    "autoload":{
-        "psr-4":{
-            "app\\":"app"
-        }
     }
 }
