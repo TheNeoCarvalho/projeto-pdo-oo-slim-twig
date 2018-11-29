@@ -1,13 +1,8 @@
 <?php
 
-	require '../vendor/autoload.php';
-	//namespace
+	require ('../bootstrap.php');
 
-	$app = new Slim\App;
-
-	$app->get('/', function($req, $res){
-		$res->getBody()->write("Hello World");
-	});
+	$app->get('/cadastro', 'app/controllers/HomeController:index');
 
 	$app->run();
 ?>
